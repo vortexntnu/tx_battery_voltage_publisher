@@ -5,6 +5,8 @@ from std_msgs.msg import String
 
 def publisher():
 
+    # TODO: change from String to int
+
     pub_volt_0 = rospy.Publisher('tx_volt_0', String, queue_size=10)
     pub_volt_1 = rospy.Publisher('tx_volt_1', String, queue_size=10)
     pub_volt_2 = rospy.Publisher('tx_volt_2', String, queue_size=10)
