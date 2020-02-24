@@ -5,9 +5,9 @@ from std_msgs.msg import String
 
 def publisher():
 
-    pub_volt_0 = rospy.Publisher('volt0', String, queue_size=10)
-    pub_volt_1 = rospy.Publisher('volt1', String, queue_size=10)
-    pub_volt_2 = rospy.Publisher('volt2', String, queue_size=10)
+    pub_volt_0 = rospy.Publisher('tx_volt_0', String, queue_size=10)
+    pub_volt_1 = rospy.Publisher('tx_volt_1', String, queue_size=10)
+    pub_volt_2 = rospy.Publisher('tx_volt_2', String, queue_size=10)
 
     rospy.init_node('tx_voltage_publisher', anonymous=True)
     rate = rospy.Rate(0.1)  # 0.1hz 10s period
